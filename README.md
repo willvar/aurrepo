@@ -23,6 +23,15 @@ This repository maintains packages for the [Arch User Repository](https://aur.ar
 | [php-opentelemetry](php-opentelemetry/) | OpenTelemetry auto-instrumentation support extension for PHP | [AUR](https://aur.archlinux.org/packages/php-opentelemetry) |
 | [proxysql](proxysql/) | High-performance MySQL proxy with query routing, caching, and load balancing (built from source) | [AUR](https://aur.archlinux.org/packages/proxysql) |
 | [proxysql-bin](proxysql-bin/) | High-performance MySQL proxy with query routing, caching, and load balancing | [AUR](https://aur.archlinux.org/packages/proxysql-bin) |
+| [ttf-kerberos](ttf-kerberos/) | Static serif fonts for long-form reading (6 styles) | [AUR](https://aur.archlinux.org/packages/ttf-kerberos) |
+| [ttf-kerberos-variable](ttf-kerberos-variable/) | Four-axis variable serif fonts for long-form reading, upright and italic | [AUR](https://aur.archlinux.org/packages/ttf-kerberos-variable) |
+| [ttf-michelangelus](ttf-michelangelus/) | Michelangelo-inspired serif font family by Studiogusto | [AUR](https://aur.archlinux.org/packages/ttf-michelangelus) |
+| [ttf-prologue](ttf-prologue/) | Epilogue-derived sans-serif fonts with revised italics and vertical metrics | [AUR](https://aur.archlinux.org/packages/ttf-prologue) |
+| [ttf-vavin](ttf-vavin/) | Garamond-derived serif fonts with a large x-height (9 styles) | [AUR](https://aur.archlinux.org/packages/ttf-vavin) |
+
+`ttf-kerberos` and `ttf-kerberos-variable` conflict; install only one variant.
+`ttf-michelangelus` downloads proprietary fonts directly from Microsoft during
+the build. Do not redistribute its source ZIP or resulting binary package.
 
 ## Installation
 
@@ -98,7 +107,9 @@ We provide a comprehensive testing tool to check coding standards and build pack
 
 ## License
 
-Each package has its own license. Please refer to the LICENSE file in each package directory.
+Packaged software and fonts retain their upstream licenses; see each package's
+`PKGBUILD` and installed upstream license files. A package directory's `LICENSE`
+may cover only the packaging files, not the upstream software or fonts.
 
 ## Links
 

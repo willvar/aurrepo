@@ -23,6 +23,14 @@
 | [php-opentelemetry](php-opentelemetry/) | OpenTelemetry 自动埋点扩展 | [AUR](https://aur.archlinux.org/packages/php-opentelemetry) |
 | [proxysql](proxysql/) | 高性能 MySQL 代理，支持查询路由、缓存和负载均衡（从源码构建） | [AUR](https://aur.archlinux.org/packages/proxysql) |
 | [proxysql-bin](proxysql-bin/) | 高性能 MySQL 代理，支持查询路由、缓存和负载均衡 | [AUR](https://aur.archlinux.org/packages/proxysql-bin) |
+| [ttf-kerberos](ttf-kerberos/) | 适合长篇阅读的静态衬线字体，共 6 款 | [AUR](https://aur.archlinux.org/packages/ttf-kerberos) |
+| [ttf-kerberos-variable](ttf-kerberos-variable/) | 适合长篇阅读的四轴可变衬线字体，含正体和斜体 | [AUR](https://aur.archlinux.org/packages/ttf-kerberos-variable) |
+| [ttf-michelangelus](ttf-michelangelus/) | Studiogusto 设计、受米开朗琪罗启发的衬线字体家族 | [AUR](https://aur.archlinux.org/packages/ttf-michelangelus) |
+| [ttf-prologue](ttf-prologue/) | 基于 Epilogue、调整斜体与垂直度量的无衬线字体 | [AUR](https://aur.archlinux.org/packages/ttf-prologue) |
+| [ttf-vavin](ttf-vavin/) | 基于 Garamond、小写字母较高的衬线字体，共 9 款 | [AUR](https://aur.archlinux.org/packages/ttf-vavin) |
+
+`ttf-kerberos` 与 `ttf-kerberos-variable` 互斥，请二选一安装。
+`ttf-michelangelus` 在构建时直接从微软下载专有字体，请勿再分发源 ZIP 或生成的二进制包。
 
 ## 安装方法
 
@@ -98,7 +106,8 @@ makepkg -si
 
 ## 许可证
 
-每个包都有自己的许可证。请参阅各包目录中的 LICENSE 文件。
+软件和字体保留各自的上游许可证，详见对应包的 `PKGBUILD` 和安装的上游许可证文件。
+包目录中的 `LICENSE` 可能仅适用于打包文件，不适用于上游软件或字体。
 
 ## 相关链接
 
